@@ -76,6 +76,24 @@ video {
     background: transparent;
 }
 
+header,
+footer,
+nav,
+main,
+article,
+aside,
+section,
+news,
+summary {
+    display: block;
+}
+
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #333;
+}
+
 h1,
 h2,
 h3,
