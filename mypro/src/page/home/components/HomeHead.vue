@@ -23,9 +23,10 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '~style/varibles.styl'
 header
   line-height: 40px
-  background-color: #65ebf5
+  background-color: $bgColor
   display: flex
 .header_box
   display: inline-block
