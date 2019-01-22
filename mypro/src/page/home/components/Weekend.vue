@@ -2,7 +2,7 @@
   <div class="weekend">
     <div class="weekend_title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for=" item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for=" item of weekendList" :key="item.id">
         <div class="item_img">
           <img class="item_pic" :src="item.imgUrl" />
         </div>
@@ -18,31 +18,34 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '01',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
-        title: '细数舒适温泉',
-        text: '有没有让你心动的温泉'
-      }, {
-        id: '02',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
-        title: '细数舒适温泉',
-        text: '有没有让你心动的温泉'
-      }, {
-        id: '03',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
-        title: '细数舒适温泉',
-        text: '有没有让你心动的温泉'
-      }, {
-        id: '04',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
-        title: '细数舒适温泉',
-        text: '有没有让你心动的温泉'
-      }]
-    }
+  props: {
+    weekendList: Array
   }
+  // data () {
+  //   return {
+  //     weekendList: [{
+  //       id: '01',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
+  //       title: '细数舒适温泉',
+  //       text: '有没有让你心动的温泉'
+  //     }, {
+  //       id: '02',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
+  //       title: '细数舒适温泉',
+  //       text: '有没有让你心动的温泉'
+  //     }, {
+  //       id: '03',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
+  //       title: '细数舒适温泉',
+  //       text: '有没有让你心动的温泉'
+  //     }, {
+  //       id: '04',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
+  //       title: '细数舒适温泉',
+  //       text: '有没有让你心动的温泉'
+  //     }]
+  //   }
+  // }
 }
 </script>
 
@@ -56,7 +59,7 @@ export default {
 .item_img
   overflow hidden
   height 0
-  padding-bottom 33.9%
+  padding-bottom 37.09%
 .item_pic
   width  100%
 .item_desc

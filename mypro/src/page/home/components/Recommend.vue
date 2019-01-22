@@ -17,48 +17,35 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '01',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-        title: '黄河梦幻水世界',
-        text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      }, {
-        id: '02',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-        title: '黄河梦幻水世界',
-        text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      }, {
-        id: '03',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-        title: '黄河梦幻水世界',
-        text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      }, {
-        id: '04',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-        title: '黄河梦幻水世界',
-        text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      }
-      // {
-      //   id: '05',
-      //   imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-      //   title: '黄河梦幻水世界',
-      //   text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      // }, {
-      //   id: '06',
-      //   imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-      //   title: '黄河梦幻水世界',
-      //   text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      // }, {
-      //   id: '07',
-      //   imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
-      //   title: '黄河梦幻水世界',
-      //   text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
-      // }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
+  // data () {
+  //   return {
+  //     recommendList: [{
+  //       id: '01',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
+  //       title: '黄河梦幻水世界',
+  //       text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
+  //     }, {
+  //       id: '02',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
+  //       title: '黄河梦幻水世界',
+  //       text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
+  //     }, {
+  //       id: '03',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
+  //       title: '黄河梦幻水世界',
+  //       text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
+  //     }, {
+  //       id: '04',
+  //       imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/10/10e2be2a239cf3f2a3.img.jpg_200x200_f56735fb.jpg',
+  //       title: '黄河梦幻水世界',
+  //       text: '黄河梦幻水世界黄河梦幻水世界黄河梦幻'
+  //     }
+  //     ]
+  //   }
+  // }
 }
 </script>
 

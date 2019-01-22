@@ -7,7 +7,7 @@
           <input class="search_val" type="text" placeholder="搜索:目的地/酒店/景点/航班号">
       </div>
       <div class="header_box city">
-        城市<span class="iconfont">&#xe6aa;</span>
+        {{this.city}}<span class="iconfont">&#xe6aa;</span>
       </div>
   </header>
 </div>
@@ -16,6 +16,9 @@
 <script>
 export default {
   name: 'HomeHeader',
+  props: {
+    city: String
+  },
   data () {
     return {
     }
