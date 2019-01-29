@@ -121,3 +121,11 @@ a {
 a:hover {
     text-decoration: none
 }
+
+input {
+    border: none
+}
+
+input:focus {
+    outline: none
+}

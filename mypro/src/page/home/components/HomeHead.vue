@@ -6,9 +6,11 @@
           <span class="l search_icon iconfont">&#xe617;</span>
           <input class="search_val" type="text" placeholder="搜索:目的地/酒店/景点/航班号">
       </div>
-      <div class="header_box city">
-        {{this.city}}<span class="iconfont">&#xe6aa;</span>
-      </div>
+      <router-link to="/city">
+        <div class="header_box city">
+          {{this.city}}<span class="iconfont">&#xe6aa;</span>
+        </div>
+      </router-link>
   </header>
 </div>
 </template>
@@ -28,7 +30,7 @@ export default {
 <style lang="stylus" scoped>
 @import '~style/varibles.styl'
 header
-  line-height: 40px
+  line-height: $headerHeight
   background-color: $bgColor
   display: flex
 .header_box
@@ -42,7 +44,7 @@ header
   flex: 1
   height: 30px
   line-height: 30px
-  margin-top: 5px
+  margin-top: 7px
   margin-right: 5px
   border-radius: 5px
   background: #fff
@@ -52,11 +54,9 @@ header
   text-align: center
 .search_val
   flex: 1
-  border: none
   font-size: 15px
-.search_val:focus
-  outline: none
 .city
   width: 50px
+  color: #fff
 
 </style>
