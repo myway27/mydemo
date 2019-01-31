@@ -17,7 +17,10 @@
           </div>
         </div>
       </div>
-      <div class="space" v-for="(item, key) of cities" :key="key">
+      <div class="space" v-for="(item, key) of cities"
+        :key="key"
+        :ref="key"
+      >
         <div class="title border-topbottom" >{{key}}</div>
         <div class="item_list">
           <div class="item border-bottom" v-for="keyItem of item" :key="keyItem.id">
@@ -36,7 +39,8 @@ export default {
   components: {BScroll},
   props: {
     cities: Object,
-    hotCities: Array
+    hotCities: Array,
+    letter: String
   },
   data () {
     return {
@@ -44,6 +48,15 @@ export default {
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        // this.$refs[this.letter]是一个数组，所以要[0]选到对应的区域
+        const ele = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(ele)
+      }
+    }
   }
 }
 </script>
